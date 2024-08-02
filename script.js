@@ -64,7 +64,7 @@ $(document).ready(function() {
 
     function getWeather(city) {
         $.ajax({
-            url: `http://api.openweathermap.org/data/2.5/weather`,
+            url: `https://api.openweathermap.org/data/2.5/weather`,
             type: 'GET',
             data: {
                 q: city,
@@ -84,7 +84,7 @@ $(document).ready(function() {
 
     function getForecast(city) {
         $.ajax({
-            url: `http://api.openweathermap.org/data/2.5/forecast`,
+            url: `https://api.openweathermap.org/data/2.5/forecast`,
             type: 'GET',
             data: {
                 q: city,
