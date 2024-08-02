@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="search-container">
+      <input type="text" id="city-input" placeholder="Search for places">
+      <button id="search-btn">Search</button>
+    </div>
+    <div class="weather-container">
+      <div class="sidebar">
+        <div id="current-weather">
+            <h2 id="city-name">N/A</h2>
+            <i id="weather-icon" class="fas fa-cloud"></i>
+          <p id="weather-description">N/A</p>
+          <h1 id="temperature">N/A</h1>
+          <p id="date-time">N/A</p>
+          <p id="location">N/A</p>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="toggle-units">
+          <button id="toggle-temp">°C / °F</button>
+        </div>
+        <div id="temperature-chart-container">
+          <canvas id="temperature-chart"></canvas>
+        </div>
+        <div class="today-highlights">
+          <div class="highlight">
+              <i class="fas fa-wind"></i>
+            <h3>Wind Status</h3>
+            <p id="wind-speed">N/A</p>
+          </div>
+          <div class="highlight">
+              <i class="fa-solid fa-cloud-sun"></i>
+            <h3>Sunrise & Sunset</h3>
+            <p id="sunrise">N/A</p>
+            <p id="sunset">N/A</p>
+          </div>
+          <div class="highlight">
+              <i class="fas fa-tint"></i>
+            <h3>Humidity</h3>
+            <p id="humidity">N/A</p>
+          </div>
+          <div class="highlight">
+              <i class="fas fa-eye"></i>
+            <h3>Visibility</h3>
+            <p id="visibility">N/A</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
